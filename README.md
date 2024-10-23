@@ -7,14 +7,15 @@ O blog permite que os usuários adicionem e gerenciem postagens de forma simples
 
 #### Funcionalidades
 
-    Criação e gerenciamento de postagens.
-    URLs amigáveis com o uso de slugs.
-    Interface de administração do Django para gerenciar conteúdo.
+Criação e gerenciamento de postagens.
+URLs amigáveis com o uso de slugs.
+Interface de administração do Django para gerenciar conteúdo.
 
 #### Requisitos
 
     Python 3.12.6
     Django 5.1.2
+    Database sqlite3
 
 Instalação
 
@@ -27,10 +28,14 @@ cd "seu-repositorio"
 
 ##### 2.Crie um ambiente virtual e ative-o:
 
-
+Em Linux use:
 
 `python -m venv venv`
-`source venv/bin/activate`  Em Windows use: `venv\Scripts\activate`
+`source venv/bin/activate`  
+
+Em Windows use: 
+
+`venv\Scripts\Activate.ps1`
 
 ##### 3.Instale as dependências:
 
