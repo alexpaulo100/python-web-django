@@ -3,7 +3,6 @@ asttokens==2.4.1
 bleach==6.1.0
 decorator==5.1.1
 Django==5.1.2
--e git+https://github.com/alexpaulo100/python-web-django.git@fe4c6a3eefa281b8856c51e0049fea683ea7fb17#egg=django_blog
 django-extensions==3.2.3
 django-markdownify==0.9.5
 executing==2.1.0

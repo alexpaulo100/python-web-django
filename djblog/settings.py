@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -18,6 +17,9 @@ TEMPLATES_DIR = BASE_DIR / "templates"
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'django-insecure-ia$8fi6=9-v03patbp84&hm*5@k3y$=2g3mhcixk-#wmfz)&sz'
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -122,3 +124,13 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+from dynaconf import DjangoDynaconf  # noqa
+
+settings = DjangoDynaconf(
+    __name__,
+    load_dotenv=False,
+    envvar_prefix='BLOG',
+    env_switcher="BLOG_ENV",
+    settings_files=["blog_settings.toml"]
+)
