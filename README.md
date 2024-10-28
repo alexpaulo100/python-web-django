@@ -48,6 +48,26 @@ Em Windows use:
 ##### 5.Inicie o servidor:
 `django-admin runserver`
 
+
+##### Método 2: Usando Docker
+
+Se você preferir usar Docker, siga os passos abaixo:
+
+    Clone o repositório (se ainda não o fez):
+
+`git clone https://github.com/alexpaulo100/python-web-django.git`
+cd "seu-repositorio"
+
+Construa e inicie os containers:
+
+`docker-compose up --build`
+
+Execute as migrações:
+
+`docker-compose exec django python manage.py migrate --noinput`
+
+Acesse o aplicativo: O aplicativo estará disponível em http://localhost.
+
 #### Comandos extras para usar em Linha de Comando
 
 Este projeto inclui um comando personalizado para adicionar novas postagens ao banco de dados diretamente pela linha de comando.
