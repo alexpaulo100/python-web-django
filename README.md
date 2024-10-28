@@ -53,9 +53,10 @@ Em Windows use:
 
 Se você preferir usar Docker, siga os passos abaixo:
 
-    Clone o repositório (se ainda não o fez):
+Clone o repositório (se ainda não o fez):
 
 `git clone https://github.com/alexpaulo100/python-web-django.git`
+
 cd "seu-repositorio"
 
 Construa e inicie os containers:
